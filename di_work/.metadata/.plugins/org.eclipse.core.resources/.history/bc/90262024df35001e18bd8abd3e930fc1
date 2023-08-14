@@ -1,0 +1,14 @@
+package hb_p;
+
+public class Brand {
+	
+	 String brand;
+	 
+	public SetBrand() {
+		System.out.println("SetName 기본생성자");
+	}
+
+	
+
+	 
+}

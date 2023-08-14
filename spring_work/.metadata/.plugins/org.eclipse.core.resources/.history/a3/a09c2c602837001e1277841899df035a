@@ -1,0 +1,32 @@
+package di_p.main;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import di_p.Coffee;
+import di_p.CoffeeShop;
+import di_p.Restaurant;
+
+public class Lookup_main2 {
+
+	public static void main(String[] args) {
+		
+		AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("di_xml/lookup2.xml");
+
+		Restaurant rs = context.getBean("rs",Restaurant.class);
+		
+		System.out.println("breakfast : " + rs.breakfast());
+		
+		/*
+		 * 식단표의 식단을 xml에서 지정하세요
+		 * 
+		 * 식단표
+		 * 아침, 점심, 저녁(식사 클래스가 리턴)
+		 * 
+		 * xml에서 각 식단대로 메뉴를 리턴
+		 *  
+		 * */
+	}
+
+}

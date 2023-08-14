@@ -1,0 +1,8 @@
+package hb_p;
+
+public class Hamburger {
+	
+	String name, kind;
+	double calorie;
+	
+}

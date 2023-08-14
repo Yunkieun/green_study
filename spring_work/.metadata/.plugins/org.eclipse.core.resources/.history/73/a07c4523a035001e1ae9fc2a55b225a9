@@ -1,0 +1,14 @@
+package di_p;
+
+public class Bicycle {
+
+	String name;
+	Tire tire;
+	Handle handle;
+	Basket basker;
+	
+	public Bicycle() {
+		System.out.println("자전거 기본생성자");
+	}
+
+}

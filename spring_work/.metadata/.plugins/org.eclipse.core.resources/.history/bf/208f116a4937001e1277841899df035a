@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<!--String name;
+	Battery bt;
+	Screen sc;
+	Pcamera ca;-->
+	
+	<bean class="di_p.MyPhone" name="phone1" p:name="어른폰" p:pcamera-ref="ccaa1">
+		<property name="bt">
+			<bean class="di_p.Battery" p:name="어른배터리"/>
+		</property>
+	</bean>
+	
+	<bean class="di_p.MyPhone" name="phone2" autowire="byName" 
+	p:name="은하수폰"/>
+	
+	<bean class="di_p.MyPhone" name="phone3" autowire="byType" 
+	p:name="어른폰" p:pcamera-ref="ccaa1"></bean>
+
+
+	<bean class="di_p.Battery" name="bbtt1" p:name="어른배터리" p:type="고성능배터리"/>
+	<bean class="di_p.Battery" name="bbtt2" p:name="은하수배터리" p:type="저성능배터리"/>
+	
+	<bean class="di_p.Screen" name="psc1" p:name="어른액정" p:stype="고강도액정"/>
+	<bean class="di_p.Screen" name="psc2" p:name="은하수액정" p:stype="저강도액정"/>
+	
+	<bean class="di_p.Pcamera" name="ccaa1" p:name="어른카메라" p:size="20"/>
+	<bean class="di_p.Pcamera" name="ccaa2" p:name="은하수카메라" p:size="10"/>
+
+</beans>
+

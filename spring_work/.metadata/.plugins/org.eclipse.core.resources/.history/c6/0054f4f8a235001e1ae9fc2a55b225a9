@@ -1,0 +1,55 @@
+package di_p.main;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import di_p.Basket;
+import di_p.Bicycle;
+import di_p.Camera;
+import di_p.HandPhone;
+import di_p.Handle;
+import di_p.Tire;
+
+public class DI_main {
+
+	public static void main(String[] args) {
+		HandPhone hp1 = new HandPhone();
+		Camera cam1 = new Camera();
+		
+		cam1.setName("전방카메라");
+		cam1.setPixel(1000);
+		
+		hp1.setName("은하수23");
+		hp1.setCam(cam1);
+		
+		Bicycle bc1 = new Bicycle();
+		Tire tire1 = new Tire();
+		Handle handle1 = new Handle();
+		Basket basket1 = new Basket();
+		
+		tire1.setName("바퀴");
+		tire1.setNum(3);
+		
+		bc1.setName("세발자전거");
+		bc1.setHandle(handle1);
+		
+		
+		
+		System.out.println(hp1);
+		
+		System.out.println("===========================");
+		//호출할때(만들때) 기본생성자가 만들어짐
+		AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("di_xml/first.xml");
+		
+		System.out.println("===========================");
+		//생성되어있는애를 데려옴
+		HandPhone hp2 = (HandPhone)context.getBean("hp2");
+		System.out.println(hp2);
+		
+		System.out.println("===========================");
+		Bicycle bc2 = (Bicycle)context.getBean("bc2");
+
+	}
+
+}

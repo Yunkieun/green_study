@@ -1,0 +1,29 @@
+package di_p;
+
+public class Tire {
+
+	String name;
+	int num;
+	
+	public Tire() {
+		System.out.println("Tire 기본생성자");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+	
+}

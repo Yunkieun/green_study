@@ -1,0 +1,60 @@
+package di_p;
+
+public class MyPhone {
+	String name;
+	Battery bt;
+	Screen sc;
+	Pcamera ca;
+}
+
+class Battery{
+	String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
+
+class Screen{
+	String name, stype;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getStype() {
+		return stype;
+	}
+
+	public void setStype(String stype) {
+		this.stype = stype;
+	}
+	
+}
+
+class Pcamera{
+	String name;
+	int size;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSize() {
+		return size;
+	}
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+}

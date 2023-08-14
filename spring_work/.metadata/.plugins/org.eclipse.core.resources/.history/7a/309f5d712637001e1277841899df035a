@@ -1,0 +1,17 @@
+package di_p;
+
+public class Meal {
+	
+	String name, menu;
+	public Meal(String name, int price) {
+		super();
+		this.name = name;
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Meal [name=" + name + ", price=" + price + "]";
+	}
+
+		
+}

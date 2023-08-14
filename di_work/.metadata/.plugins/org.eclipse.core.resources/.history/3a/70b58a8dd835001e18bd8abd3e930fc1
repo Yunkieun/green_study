@@ -1,0 +1,26 @@
+package hb_p.main;
+
+import org.springframework.context.support.AbstractApplicationContext;
+
+import hb_p.Drink;
+import hb_p.Hamburger;
+import hb_p.Name;
+import hb_p.Price;
+import hb_p.Side;
+
+public class Hb_main {
+
+	public static void main(String[] args) {
+		
+		Hamburger hb1 = new Hamburger();
+		Drink dr1 = new Drink();
+		Side si1 = new Side();
+		Name na1 = new Name();
+		Price pr1 = new Price();
+		
+		AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("hb_xml/first.xml");
+
+	}
+
+}

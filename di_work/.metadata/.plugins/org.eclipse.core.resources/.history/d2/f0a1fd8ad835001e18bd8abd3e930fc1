@@ -1,0 +1,23 @@
+package hb_p.main;
+
+import hb_p.Drink;
+import hb_p.Hamburger;
+import hb_p.Name;
+import hb_p.Price;
+import hb_p.Side;
+
+public class Hb_main {
+
+	public static void main(String[] args) {
+		
+		Hamburger hb1 = new hamburger();
+		Drink dr1 = new drink();
+		Side si1 = new side();
+		Name na1 = new name();
+		Price pr1 = new price();
+		
+		
+
+	}
+
+}

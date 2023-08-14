@@ -1,0 +1,22 @@
+package hb_p;
+
+public class HBset {
+	
+	String hbsname;
+	Hamburger hamburger;
+	Drink drink;
+	Side side;
+	Brand brand;
+	Price price;
+	
+	public HBset() {
+		System.out.println("햄버거세트 기본생성자");
+	}
+
+	
+
+
+	
+	
+	
+}

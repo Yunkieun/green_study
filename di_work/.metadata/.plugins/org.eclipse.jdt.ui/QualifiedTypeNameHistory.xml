@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="hb_p.Hamburger"/>
+    <fullyQualifiedTypeName name="hb_p.Drink"/>
+    <fullyQualifiedTypeName name="hb_p.Side"/>
+    <fullyQualifiedTypeName name="hb_p.Name"/>
+    <fullyQualifiedTypeName name="hb_p.Price"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="hb_p.HBset"/>
+    <fullyQualifiedTypeName name="hb_p.SetName"/>
+</qualifiedTypeNameHistroy>

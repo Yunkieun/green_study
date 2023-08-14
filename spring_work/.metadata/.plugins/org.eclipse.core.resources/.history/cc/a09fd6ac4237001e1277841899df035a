@@ -1,0 +1,20 @@
+package di_p;
+
+public class MyPhone {
+	String name;
+	Battery bt;
+	Screen sc;
+	Pcamera ca;
+}
+
+class Battery{
+	String name;
+}
+
+class Screen{
+	String name;
+}
+
+class Pcamera{
+	String name;
+}

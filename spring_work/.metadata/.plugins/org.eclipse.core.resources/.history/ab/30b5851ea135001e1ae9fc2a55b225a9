@@ -1,0 +1,10 @@
+package di_p;
+
+public class Handle {
+	
+	String name;
+	
+	public Handle() {
+		System.out.println("Handle 기본생성자");
+	}
+}

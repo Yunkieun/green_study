@@ -1,0 +1,17 @@
+package di_p;
+
+public class AutoCar {
+
+}
+
+class Engin{
+	
+}
+
+class Wheel{
+	
+}
+
+class Handle{
+	
+}

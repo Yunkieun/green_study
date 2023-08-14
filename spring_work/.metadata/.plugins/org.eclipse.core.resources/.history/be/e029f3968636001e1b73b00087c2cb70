@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean class="di_p.Student" name="stu">
+		<property name="name" value="윤깅"/>
+		<property name="subj">
+			<array>
+				<value>국어</value>
+				<value>영어</value>
+				<value>수학</value> 
+			</array>
+		</property>
+		<property name="jum">
+			<array>
+				<value>100</value>
+				<value>95</value>
+				<value>90</value> 
+				<value>85</value> 
+				<value>80</value> 
+				<value>75</value> 
+				<value>70</value> 
+				<value>65</value> 
+				<value>60</value> 
+				<value>55</value> 
+				<value>50</value> 
+				<value>45</value> 
+			</array>
+		</property>
+	</bean>
+	
+</beans>

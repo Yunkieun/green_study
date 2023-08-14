@@ -1,0 +1,25 @@
+package hb_p;
+
+public class Name {
+	
+	 String name;
+	 
+	public Name() {
+		System.out.println("Name 기본생성자");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Name [name=" + name + "]";
+	}
+	 
+	 
+}

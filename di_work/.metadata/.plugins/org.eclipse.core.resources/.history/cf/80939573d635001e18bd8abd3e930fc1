@@ -1,0 +1,7 @@
+package hb_p;
+
+public class Side {
+	
+	String sname;
+	int num;
+}

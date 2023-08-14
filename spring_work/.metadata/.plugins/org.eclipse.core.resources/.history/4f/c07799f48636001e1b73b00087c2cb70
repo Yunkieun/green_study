@@ -1,0 +1,74 @@
+package di_p;
+
+import java.util.Arrays;
+import java.util.Set;
+
+public class Student {
+	
+	String name;
+	String [] subj;
+	int [] jum;
+	int tot;
+	double avg;
+	/*
+	public Student(String name, String ... jum) {
+		super();
+		this.name = name;
+		this.jum = new int [jum.length]; 
+		
+		for(int i=0; i<jum.length; i++) {
+			this.jum[i] = Integer.parseInt(jum[i]);
+			
+		}
+		calc(); 
+	}
+	
+	void calc() {
+		tot = 0;
+		for(int i : jum) {
+			tot += i;
+		}
+		
+		avg = tot/jum.length;
+	}
+	*/
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String[] getSubj() {
+		return subj;
+	}
+	public void setSubj(String[] subj) {
+		this.subj = subj;
+	}
+	public int[] getJum() {
+		return jum;
+	}
+	public void setJum(int[] jum) {
+		this.jum = jum;
+	}
+	public int getTot() {
+		return tot;
+	}
+	public void setTot(int tot) {
+		tot += jum; 
+		this.tot = tot;
+	}
+	public double getAvg() {
+		return avg;
+	}
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", subj=" + Arrays.toString(subj) + ", jum=" + Arrays.toString(jum) + ", tot="
+				+ tot + ", avg=" + avg + "]";
+	}
+	
+	
+
+}

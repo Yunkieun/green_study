@@ -1,0 +1,121 @@
+package di_p.main;
+
+public class DIStu {
+	
+	String subj1, subj2, subj3, subj4, subj5;
+	String name, grade; 
+	int [] jum;
+	int tot, avg, rank;
+	
+	int [] arr, arr1;
+
+	public String getSubj1() {
+		return subj1;
+	}
+
+	public void setSubj1(String subj1) {
+		this.subj1 = subj1;
+	}
+
+	public String getSubj2() {
+		return subj2;
+	}
+
+	public void setSubj2(String subj2) {
+		this.subj2 = subj2;
+	}
+
+	public String getSubj3() {
+		return subj3;
+	}
+
+	public void setSubj3(String subj3) {
+		this.subj3 = subject3;
+	}
+
+	public String getSubj4() {
+		return subj4;
+	}
+
+	public void setSubj4(String subjt4) {
+		this.subj4 = subj4;
+	}
+
+	public String getSubj5() {
+		return subj5;
+	}
+
+	public void setSubj5(String subj5) {
+		this.subj5 = subj5;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	public int[] getJum() {
+		return jum;
+	}
+
+	public void setJum(int[] jum) {
+		this.jum = jum;
+	}
+
+	public int getTot() {
+		return tot;
+	}
+
+	public void setTot(int tot) {
+		this.tot = tot;
+	}
+
+	public int getAvg() {
+		return avg;
+	}
+
+	public void setAvg(int avg) {
+		this.avg = avg;
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+
+	public int[] getArr() {
+		return arr;
+	}
+
+	public void setArr(int[] arr) {
+		this.arr = arr;
+	}
+
+	public int[] getArr1() {
+		return arr1;
+	}
+
+	public void setArr1(int... arr1) {
+		this.arr1 = arr1;
+	}
+	
+	
+	
+	
+	
+	
+}

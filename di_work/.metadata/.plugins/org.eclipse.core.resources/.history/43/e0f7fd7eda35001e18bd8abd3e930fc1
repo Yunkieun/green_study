@@ -1,0 +1,62 @@
+package hb_p;
+
+public class HBset {
+	
+	Hamburger hamburger;
+	Drink drink;
+	Side side;
+	Name name;
+	Price price;
+	
+	public HBset() {
+		System.out.println("햄버거세트 기본생성자");
+	}
+
+	public Hamburger getHamburger() {
+		return hamburger;
+	}
+
+	public void setHamburger(Hamburger hamburger) {
+		this.hamburger = hamburger;
+	}
+
+	public Drink getDrink() {
+		return drink;
+	}
+
+	public void setDrink(Drink drink) {
+		this.drink = drink;
+	}
+
+	public Side getSide() {
+		return side;
+	}
+
+	public void setSide(Side side) {
+		this.side = side;
+	}
+
+	public Name getName() {
+		return name;
+	}
+
+	public void setName(Name name) {
+		this.name = name;
+	}
+
+	public Price getPrice() {
+		return price;
+	}
+
+	public void setPrice(Price price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "HBset [hamburger=" + hamburger + ", name=" + name + ", drink=" + drink + ", side=" + side + ", price="
+				+ price + "]";
+	}
+	
+	
+}

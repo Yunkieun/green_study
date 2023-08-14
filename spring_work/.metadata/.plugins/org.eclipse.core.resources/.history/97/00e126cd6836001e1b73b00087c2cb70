@@ -1,0 +1,11 @@
+package di_p.main;
+
+public class DIStu {
+	
+	String sname, subject;
+	int rank;
+	int [] arr, arr1;
+	
+	
+	public
+}

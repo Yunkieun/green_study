@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean class="hb_p.HBset" name="hbs2">
+		<property name="hamburger">
+			<ref bean="hamburger2"/>
+		</property>
+		<property name="drink">
+			<ref bean="drink2"/>
+		</property>
+		<property name="side">
+			<ref bean="side2"/>
+		</property>
+		<property name="brand">
+			<ref bean="brand2"/>
+		</property>
+		<property name="price">
+			<ref bean="price2"/>
+		</property>
+	</bean>
+
+	<bean class="hb_p.Hamburger" name="hamburger2">
+		<property name="hname" value="게살버거"/>
+		<property name="kind" value="게살"/>
+		<property name="calorie" value="653.4"/>
+	</bean>
+	<bean class="hb_p.Drink" name="drink2">
+		<property name="dname" value="콜라"/>
+		<property name="temp" value="아이스"/>
+		<property name="size" value="라지"/>
+	</bean>
+	<bean class="hb_p.Side" name="side2">
+		<property name="sname" value="감자튀김"/>
+		<property name="num" value="1"/>
+	</bean>
+	<bean class="hb_p.Brand" name="brand2">
+		<property name="brand" value="집게리아"/>
+	</bean>
+	<bean class="hb_p.Price" name="price2">
+		<property name="price" value="13000"/>
+	</bean>
+
+
+
+
+
+
+
+
+</beans>

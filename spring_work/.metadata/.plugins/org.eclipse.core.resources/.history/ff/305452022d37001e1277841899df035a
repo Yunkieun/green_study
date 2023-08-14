@@ -1,0 +1,19 @@
+package di_p;
+
+public class AutoCar {
+	AutoEngine eng;
+	List<AutoWheel> whs;
+	AutoHandle handle;
+}
+
+class AutoEngin{
+	
+}
+
+class AutoWheel{
+	
+}
+
+class AutoHandle{
+	
+}

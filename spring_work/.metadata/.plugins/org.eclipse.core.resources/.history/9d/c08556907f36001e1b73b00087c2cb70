@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<bean class="di_p.Student" name="stu">
+		<property name="name" value="김민정"/>
+		<property name="subj">
+			<array>
+				<value>국어</value>
+				<value>영어</value>
+				<value>수학</value> 
+			</array>
+		</property>
+	</bean>
+
+	<bean class="java.util.HashSet" name="ss1">
+		<constructor-arg>
+			<list>
+				<value>65</value>
+				<value>70</value>
+				<value>75</value>
+				<value>80</value>
+				<value>85</value>
+				<value>90</value>
+				<value>95</value>
+				<value>100</value>
+			</list>
+		</constructor-arg>
+	</bean>
+		
+		
+	
+</beans>

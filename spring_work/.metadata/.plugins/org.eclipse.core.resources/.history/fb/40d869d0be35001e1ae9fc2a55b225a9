@@ -1,0 +1,25 @@
+package di_p;
+
+public class Basket {
+	String name;
+	
+	public Basket() {
+		System.out.println("Basket 기본생성자");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		System.out.println("Basket setName():"+name);
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Basket [name=" + name + "]";
+	}
+	
+	
+}

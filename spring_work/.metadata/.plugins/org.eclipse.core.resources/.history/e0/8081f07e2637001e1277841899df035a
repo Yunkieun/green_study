@@ -1,0 +1,8 @@
+package di_p;
+
+public class restaurant {
+	
+	public Meal breakfast() {
+		System.out.println("breakfast 실행");
+	}
+}

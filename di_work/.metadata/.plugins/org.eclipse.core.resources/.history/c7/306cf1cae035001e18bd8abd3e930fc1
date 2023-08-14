@@ -1,0 +1,43 @@
+package hb_p;
+
+public class Drink {
+	
+	String dname, temp, size;
+	
+	public Drink() {
+		System.out.println("Drink 기본생성자");
+	}
+
+	public String getDname() {
+		return dname;
+	}
+
+	public void setDname(String dname) {
+		this.dname = dname;
+	}
+
+	public String getTemp() {
+		return temp;
+	}
+
+	public void setTemp(String temp) {
+		this.temp = temp;
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	@Override
+	public String toString() {
+		return "Drink [dname=" + dname + ", temp=" + temp + ", size=" + size + "]";
+	}
+
+	
+	
+	
+}

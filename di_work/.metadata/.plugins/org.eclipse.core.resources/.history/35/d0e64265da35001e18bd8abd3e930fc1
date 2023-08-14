@@ -1,0 +1,26 @@
+package hb_p;
+
+public class SetName {
+	
+	 String setname;
+	 
+	public SetName() {
+		System.out.println("SetName 기본생성자");
+	}
+
+	public String getSetname() {
+		return setname;
+	}
+
+	public void setSetname(String setname) {
+		this.setname = setname;
+	}
+
+	@Override
+	public String toString() {
+		return "SetName [setname=" + setname + "]";
+	}
+
+
+	 
+}

@@ -1,0 +1,32 @@
+package hb_p.main;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import hb_p.Drink;
+import hb_p.HBset;
+import hb_p.Hamburger;
+import hb_p.Price;
+import hb_p.SetName;
+import hb_p.Side;
+
+public class Hb_main {
+
+	public static void main(String[] args) {
+		
+		HBset hbs1 = new HBset();
+		Hamburger hb1 = new Hamburger();
+		Drink dr1 = new Drink();
+		Side si1 = new Side();
+		SetName na1 = new SetName();
+		Price pr1 = new Price();
+		
+		AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("hb_xml/first.xml");
+
+		HBset hbs2 = (HBset)context.getBean("hbs2");
+		
+		System.out.println(hbs2);
+	}
+
+}

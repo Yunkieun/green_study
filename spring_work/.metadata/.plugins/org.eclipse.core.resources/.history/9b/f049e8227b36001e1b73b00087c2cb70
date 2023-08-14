@@ -1,0 +1,20 @@
+package di_p.main;
+
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import di_p.Student;
+
+public class Student_main {
+
+	public static void main(String[] args) {
+		
+		AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("di_xml/student.xml");
+		
+		Student dis = context.getBean("dis", Student.class);
+		System.out.println(dis.name+","+dis.grade);
+	}
+
+}

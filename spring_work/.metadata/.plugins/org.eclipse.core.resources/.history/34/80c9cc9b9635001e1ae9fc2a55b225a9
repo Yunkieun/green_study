@@ -1,0 +1,8 @@
+package di_p.main;
+
+public class DI_main {
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package hb_p;
+
+public class Drink {
+	
+	String name, temp, size;
+	
+	
+}

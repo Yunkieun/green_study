@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean class="di_p.Restaurant" name="rs">
+		<lookup-method name="breakfast" bean="br"/> 
+		<lookup-method name="lunch" bean="ex"/> 
+		<lookup-method name="dinner" bean="di"/> 
+		
+		
+	</bean>
+	
+	<bean class="di_p.Meal" name="br">
+		<constructor-arg value="아침"/>
+		<constructor-arg value="시리얼"/>
+	</bean>
+	<bean class="di_p.Meal" name="lu">
+		<constructor-arg value="점심"/>
+		<constructor-arg value="냉면"/>
+	</bean>
+	<bean class="di_p.Meal" name="di">
+		<constructor-arg value="저녁"/>
+		<constructor-arg value="닭발"/>
+	</bean>
+	<bean class="di_p.Meal" name="ex">
+		<constructor-arg value="점심"/>
+		<constructor-arg value="샤브샤브"/>
+	</bean>
+</beans>

@@ -1,0 +1,10 @@
+package hb_p;
+
+public class Hamburger {
+	
+	String hname, kind;
+	double calorie;
+	
+	
+	
+}
